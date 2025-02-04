@@ -9,19 +9,18 @@ if (!current_user_can('seller')) {
 get_header(); ?>
 
 <div class="seller-dashboard">
-    <h1>Панель продавца</h1>
+    <h1>Seller Dashboard</h1>
 
     <nav>
         <ul>
-            <li><a href="<?php echo admin_url('post-new.php?post_type=product'); ?>">Добавить товар</a></li>
-            <li><a href="<?php echo admin_url('edit.php?post_type=product'); ?>">Мои товары</a></li>
-            <li><a href="<?php echo admin_url('edit.php?post_type=shop_order'); ?>">Мои заказы</a></li>
+            <li><a href="<?php echo admin_url('post-new.php?post_type=product'); ?>">Add Product</a></li>
+            <li><a href="<?php echo admin_url('edit.php?post_type=product'); ?>">My Products</a></li>
+            <li><a href="<?php echo admin_url('edit.php?post_type=shop_order'); ?>">My Orders</a></li>
         </ul>
     </nav>
 
     <section class="sales-stats">
-        <h2>Статистика продаж</h2>
-        <!-- Здесь будет вывод аналитики -->
+        <h2>Sales Statistics</h2>
     </section>
 </div>
 
